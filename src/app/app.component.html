@@ -1,0 +1,17 @@
+
+<div class="clock"ng-controller='TimeCtrl as timeCtrl'>
+    <p> London Clock </p>
+    <!-- <p>{{Clock | date:'HH:mm:ss'}}</p> -->
+    <p>
+      <span (click) = "pause()">
+        <input class= "jae" type="number"  [(ngModel)]= 'hour'>
+       :  </span>
+      <span (click) = "pause()">
+        <input class= "jae" type="number"  [(ngModel)]= 'min'>
+      :  </span>
+      <span (click) = "pause()">
+        <input class= "jae" type="number"  [(ngModel)]= 'sec'>
+      {{time}} </span>
+     </p>
+     <button (click) = "start()">Enter</button>
+</div>
